@@ -1,0 +1,1401 @@
+local function Main12(pass)
+if pass == "oddyblood" then
+
+ScreenGui = Instance.new("ScreenGui")
+DeleteGui = Instance.new("Frame")
+Label = Instance.new("TextLabel")
+Yes = Instance.new("TextButton")
+UICorner = Instance.new("UICorner")
+No = Instance.new("TextButton")
+UICorner_1 = Instance.new("UICorner")
+Info = Instance.new("TextLabel")
+UICorner_2 = Instance.new("UICorner")
+StackGui = Instance.new("Frame")
+UIListLayout = Instance.new("UIListLayout")
+UICorner_3 = Instance.new("UICorner")
+Cancel = Instance.new("TextButton")
+UICorner_4 = Instance.new("UICorner")
+Space = Instance.new("Frame")
+Left = Instance.new("ImageButton")
+Right = Instance.new("ImageButton")
+Up = Instance.new("ImageButton")
+Down = Instance.new("ImageButton")
+CAL = Instance.new("ImageButton")
+CAR = Instance.new("ImageButton")
+RotateL90 = Instance.new("ImageButton")
+RotateR90 = Instance.new("ImageButton")
+UpAmm = Instance.new("ImageButton")
+Amm = Instance.new("TextLabel")
+DownAmm = Instance.new("ImageButton")
+Confirm = Instance.new("TextButton")
+UICorner_5 = Instance.new("UICorner")
+SelectGui = Instance.new("Frame")
+SelectAll = Instance.new("TextButton")
+UICorner_6 = Instance.new("UICorner")
+UnselectAll = Instance.new("TextButton")
+UICorner_7 = Instance.new("UICorner")
+Players = Instance.new("TextButton")
+SelectBP = Instance.new("TextButton")
+UICorner_8 = Instance.new("UICorner")
+Frame = Instance.new("Frame")
+TextLabel = Instance.new("TextLabel")
+TextLabel1 = Instance.new("TextLabel")
+Boxed = Instance.new("TextButton")
+UICorner_9 = Instance.new("UICorner")
+Wood = Instance.new("TextButton")
+UICorner_10 = Instance.new("UICorner")
+Type = Instance.new("TextButton")
+UICorner_11 = Instance.new("UICorner")
+Frame_1 = Instance.new("Frame")
+TextLabel_1 = Instance.new("TextLabel")
+Delete = Instance.new("TextButton")
+UICorner_12 = Instance.new("UICorner")
+Stack = Instance.new("TextButton")
+UICorner_13 = Instance.new("UICorner")
+Frame_2 = Instance.new("Frame")
+TextLabel_2 = Instance.new("TextLabel")
+ScrollingFrame = Instance.new("ScrollingFrame")
+Player = Instance.new("TextButton")
+UIListLayout_1 = Instance.new("UIListLayout")
+Move = Instance.new("TextButton")
+UICorner_14 = Instance.new("UICorner")
+StackC = Instance.new("Frame")
+UIListLayout_2 = Instance.new("UIListLayout")
+UICorner_15 = Instance.new("UICorner")
+Cancel_2 = Instance.new("TextButton")
+UICorner_16 = Instance.new("UICorner")
+UpX = Instance.new("ImageButton")
+XSize = Instance.new("TextLabel")
+DownX = Instance.new("ImageButton")
+Space_1 = Instance.new("Frame")
+UpZ = Instance.new("ImageButton")
+ZSize = Instance.new("TextLabel")
+DownZ = Instance.new("ImageButton")
+Confirm_2 = Instance.new("TextButton")
+UICorner_17 = Instance.new("UICorner")
+
+ScreenGui.Parent = game:GetService("CoreGui")
+
+DeleteGui.Parent = ScreenGui
+DeleteGui.Size = UDim2.new(0, 326, 0, 186)
+DeleteGui.Visible = false
+DeleteGui.Position = UDim2.new(0.5, -163, 0.5, -92)
+DeleteGui.Name = "DeleteGui"
+DeleteGui.BorderSizePixel = 0
+DeleteGui.BackgroundColor3 = Color3.new(0.21176470816135406, 0.21176470816135406, 0.21176470816135406)
+
+Label.Parent = DeleteGui
+Label.TextWrapped = true
+Label.BorderSizePixel = 0
+Label.TextScaled = true
+Label.BackgroundColor3 = Color3.new(0.14901961386203766, 0.14901961386203766, 0.14901961386203766)
+Label.Size = UDim2.new(0, 326, 0, 35)
+Label.TextSize = 9
+Label.Text = "Delete Confirm"
+Label.TextColor3 = Color3.new(1, 1, 1)
+Label.Font = Enum.Font.TitilliumWeb
+Label.Name = "Label"
+
+Yes.Parent = DeleteGui
+Yes.BackgroundColor3 = Color3.new(0.14901961386203766, 0.14901961386203766, 0.14901961386203766)
+Yes.Size = UDim2.new(0, 141, 0, 53)
+Yes.TextSize = 35
+Yes.TextColor3 = Color3.new(0.7725490927696228, 0, 0)
+Yes.Text = "Yes"
+Yes.Font = Enum.Font.ArialBold
+Yes.Position = UDim2.new(0.042944785207509995, 0, 1, -68)
+Yes.Name = "Yes"
+
+UICorner.Parent = Yes
+
+No.Parent = DeleteGui
+No.BackgroundColor3 = Color3.new(0.14901961386203766, 0.14901961386203766, 0.14901961386203766)
+No.Size = UDim2.new(0, 139, 0, 53)
+No.TextSize = 35
+No.TextColor3 = Color3.new(0, 0.7411764860153198, 0.12156863510608673)
+No.Text = "No"
+No.Font = Enum.Font.ArialBold
+No.Position = UDim2.new(0.5306748747825623, 0, 1, -68)
+No.Name = "No"
+
+UICorner_1.Parent = No
+
+Info.Parent = DeleteGui
+Info.TextWrapped = true
+Info.TextStrokeTransparency = 0
+Info.BackgroundColor3 = Color3.new(0.14901961386203766, 0.14901961386203766, 0.14901961386203766)
+Info.Size = UDim2.new(0, 298, 0, 54)
+Info.TextSize = 33
+Info.Text = "  Are You Sure  ?"
+Info.TextColor3 = Color3.new(1, 1, 1)
+Info.Font = Enum.Font.SourceSansBold
+Info.Position = UDim2.new(0.042944785207509995, 0, 0, 50)
+Info.Name = "Info"
+
+UICorner_2.Parent = Info
+
+StackGui.Parent = ScreenGui
+StackGui.Size = UDim2.new(0, 656, 0, 43)
+StackGui.Visible = false
+StackGui.Position = UDim2.new(1, -656, 1, -43)
+StackGui.Name = "StackGui"
+StackGui.BorderSizePixel = 0
+StackGui.BackgroundColor3 = Color3.new(0, 0, 0)
+
+UIListLayout.Parent = StackGui
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+
+UICorner_3.Parent = StackGui
+
+Cancel.Parent = StackGui
+Cancel.BackgroundColor3 = Color3.new(0.16470588743686676, 0.4784314036369324, 0.6196078658103943)
+Cancel.Size = UDim2.new(0, 90, 0, 32)
+Cancel.TextSize = 22
+Cancel.TextColor3 = Color3.new(1, 1, 1)
+Cancel.Text = "Cancel"
+Cancel.Font = Enum.Font.SourceSansBold
+Cancel.Position = UDim2.new(0.7587718367576599, 0, 0.09999971836805344, 0)
+Cancel.Name = "Cancel"
+
+UICorner_4.Parent = Cancel
+
+Space.Parent = StackGui
+Space.Size = UDim2.new(0, 14, 0, 21)
+Space.BackgroundTransparency = 1
+Space.Position = UDim2.new(0.16647042334079742, 0, 0.25581395626068115, 0)
+Space.Name = "Space"
+Space.BackgroundColor3 = Color3.new(1, 1, 1)
+
+Left.Parent = StackGui
+Left.ScaleType = Enum.ScaleType.Fit
+Left.BackgroundColor3 = Color3.new(0.21176470816135406, 0.21176470816135406, 0.21176470816135406)
+Left.Image = "rbxassetid://9406982203"
+Left.Size = UDim2.new(0, 36, 0, 34)
+Left.BackgroundTransparency = 1
+Left.Name = "Left"
+
+Right.Parent = StackGui
+Right.ScaleType = Enum.ScaleType.Fit
+Right.BackgroundColor3 = Color3.new(0.21176470816135406, 0.21176470816135406, 0.21176470816135406)
+Right.Image = "rbxassetid://9406983117"
+Right.Size = UDim2.new(0, 36, 0, 34)
+Right.BackgroundTransparency = 1
+Right.Name = "Right"
+
+Up.Parent = StackGui
+Up.ScaleType = Enum.ScaleType.Fit
+Up.BackgroundColor3 = Color3.new(0.21176470816135406, 0.21176470816135406, 0.21176470816135406)
+Up.Image = "rbxassetid://9406977951"
+Up.Size = UDim2.new(0, 36, 0, 34)
+Up.BackgroundTransparency = 1
+Up.Name = "Up"
+
+Down.Parent = StackGui
+Down.ScaleType = Enum.ScaleType.Fit
+Down.BackgroundColor3 = Color3.new(0.21176470816135406, 0.21176470816135406, 0.21176470816135406)
+Down.Image = "rbxassetid://9406979021"
+Down.Size = UDim2.new(0, 36, 0, 34)
+Down.BackgroundTransparency = 1
+Down.Name = "Down"
+
+CAL.Parent = StackGui
+CAL.ScaleType = Enum.ScaleType.Fit
+CAL.BackgroundColor3 = Color3.new(0.21176470816135406, 0.21176470816135406, 0.21176470816135406)
+CAL.Image = "rbxassetid://9406994079"
+CAL.Size = UDim2.new(0, 36, 0, 34)
+CAL.BackgroundTransparency = 1
+CAL.Position = UDim2.new(0.46312016248703003, 0, 0.09999971836805344, 0)
+CAL.Name = "CAL"
+
+CAR.Parent = StackGui
+CAR.ScaleType = Enum.ScaleType.Fit
+CAR.BackgroundColor3 = Color3.new(0.21176470816135406, 0.21176470816135406, 0.21176470816135406)
+CAR.Image = "rbxassetid://9406920891"
+CAR.Size = UDim2.new(0, 36, 0, 34)
+CAR.BackgroundTransparency = 1
+CAR.Name = "CAR"
+
+RotateL90.Parent = StackGui
+RotateL90.ScaleType = Enum.ScaleType.Slice
+RotateL90.BackgroundColor3 = Color3.new(0.21176470816135406, 0.21176470816135406, 0.21176470816135406)
+RotateL90.Image = "rbxassetid://9442633125"
+RotateL90.Size = UDim2.new(0, 36, 0, 28)
+RotateL90.BackgroundTransparency = 1
+RotateL90.Position = UDim2.new(0.7134250998497009, 0, 0.12790697813034058, 0)
+RotateL90.Name = "RotateL90"
+
+RotateR90.Parent = StackGui
+RotateR90.ScaleType = Enum.ScaleType.Slice
+RotateR90.BackgroundColor3 = Color3.new(0.21176470816135406, 0.21176470816135406, 0.21176470816135406)
+RotateR90.Image = "rbxassetid://9442632372"
+RotateR90.Size = UDim2.new(0, 36, 0, 28)
+RotateR90.BackgroundTransparency = 1
+RotateR90.Name = "RotateR90"
+
+UpAmm.Parent = StackGui
+UpAmm.ScaleType = Enum.ScaleType.Fit
+UpAmm.BackgroundColor3 = Color3.new(0.21176470816135406, 0.21176470816135406, 0.21176470816135406)
+UpAmm.Image = "rbxassetid://9406977951"
+UpAmm.Size = UDim2.new(0, 52, 0, 34)
+UpAmm.BackgroundTransparency = 1
+UpAmm.Position = UDim2.new(0.7904298305511475, 0, 0.44883692264556885, 0)
+UpAmm.Name = "UpAmm"
+
+Amm.Parent = StackGui
+Amm.BackgroundColor3 = Color3.new(0, 0, 0)
+Amm.Size = UDim2.new(0, 55, 0, 31)
+Amm.TextSize = 30
+Amm.BorderColor3 = Color3.new(0.09803921729326248, 1, 0)
+Amm.Text = "1"
+Amm.TextColor3 = Color3.new(0.09803921729326248, 1, 0)
+Amm.Font = Enum.Font.Cartoon
+Amm.Position = UDim2.new(0.9042896032333374, 0, 0.7093023061752319, 0)
+Amm.Name = "Amm"
+
+DownAmm.Parent = StackGui
+DownAmm.ScaleType = Enum.ScaleType.Fit
+DownAmm.BackgroundColor3 = Color3.new(0.21176470816135406, 0.21176470816135406, 0.21176470816135406)
+DownAmm.Image = "rbxassetid://9406979021"
+DownAmm.Size = UDim2.new(0, 52, 0, 34)
+DownAmm.BackgroundTransparency = 1
+DownAmm.Position = UDim2.new(1.3377007246017456, 0, -7.179069519042969, 0)
+DownAmm.Name = "DownAmm"
+
+Confirm.Parent = StackGui
+Confirm.BackgroundColor3 = Color3.new(0.16470588743686676, 0.4784314036369324, 0.6196078658103943)
+Confirm.Size = UDim2.new(0, 90, 0, 32)
+Confirm.TextSize = 22
+Confirm.TextColor3 = Color3.new(1, 1, 1)
+Confirm.Text = "Confirm"
+Confirm.Font = Enum.Font.SourceSansBold
+Confirm.Position = UDim2.new(0.8585997223854065, 0, 0.42558109760284424, 0)
+Confirm.Name = "Confirm"
+
+UICorner_5.Parent = Confirm
+
+SelectGui.Parent = ScreenGui
+SelectGui.Size = UDim2.new(0, 213, 0, 505)
+SelectGui.Visible = false
+SelectGui.Position = UDim2.new(0, 0, 1, -505)
+SelectGui.Name = "SelectGui"
+SelectGui.BorderSizePixel = 0
+SelectGui.BackgroundColor3 = Color3.new(0.33725491166114807, 0.33725491166114807, 0.33725491166114807)
+
+SelectAll.Parent = SelectGui
+SelectAll.TextStrokeTransparency = 0
+SelectAll.BorderSizePixel = 0
+SelectAll.BackgroundColor3 = Color3.new(0.24313727021217346, 0.24313727021217346, 0.24313727021217346)
+SelectAll.Size = UDim2.new(0, 88, 0, 26)
+SelectAll.TextSize = 16
+SelectAll.TextColor3 = Color3.new(1, 1, 1)
+SelectAll.Text = "Select All"
+SelectAll.Font = Enum.Font.DenkOne
+SelectAll.Position = UDim2.new(0, 12, 1, -140)
+SelectAll.Name = "SelectAll"
+
+UICorner_6.Parent = SelectAll
+UICorner_6.CornerRadius = UDim.new(0, 5)
+
+UnselectAll.Parent = SelectGui
+UnselectAll.TextStrokeTransparency = 0
+UnselectAll.BorderSizePixel = 0
+UnselectAll.BackgroundColor3 = Color3.new(0.24313727021217346, 0.24313727021217346, 0.24313727021217346)
+UnselectAll.Size = UDim2.new(0, 88, 0, 26)
+UnselectAll.TextSize = 15
+UnselectAll.TextColor3 = Color3.new(1, 1, 1)
+UnselectAll.Text = "Unselect All"
+UnselectAll.Font = Enum.Font.DenkOne
+UnselectAll.Position = UDim2.new(0, 112, 1, -140)
+UnselectAll.Name = "UnselectAll"
+
+UICorner_7.Parent = UnselectAll
+UICorner_7.CornerRadius = UDim.new(0, 5)
+
+Players.Parent = SelectGui
+Players.TextStrokeTransparency = 0
+Players.BorderSizePixel = 0
+Players.BackgroundColor3 = Color3.new(0.24313727021217346, 0.24313727021217346, 0.24313727021217346)
+Players.Size = UDim2.new(0, 188, 0, 22)
+Players.TextSize = 16
+Players.TextColor3 = Color3.new(1, 1, 1)
+Players.Text = game:GetService("Players").LocalPlayer.Name
+Players.Font = Enum.Font.DenkOne
+Players.Position = UDim2.new(0, 12, 1, -107)
+Players.Name = "Players"
+
+SelectBP.Parent = SelectGui
+SelectBP.TextStrokeTransparency = 0
+SelectBP.BorderSizePixel = 0
+SelectBP.BackgroundColor3 = Color3.new(0.24313725531101227, 0.24313725531101227, 0.24313725531101227)
+SelectBP.Size = UDim2.new(0, 188, 0, 28)
+SelectBP.TextSize = 15
+SelectBP.TextColor3 = Color3.new(1, 1, 1)
+SelectBP.Text = "Select All Empty Blueprints"
+SelectBP.Font = Enum.Font.DenkOne
+SelectBP.Position = UDim2.new(0, 12, 1, -175)
+SelectBP.Name = "SelectBP"
+
+UICorner_8.Parent = SelectBP
+UICorner_8.CornerRadius = UDim.new(0, 5)
+
+Frame.Parent = SelectGui
+Frame.Size = UDim2.new(1, 0, 0, 23)
+Frame.BorderSizePixel = 0
+Frame.BackgroundColor3 = Color3.new(0.21176470816135406, 0.21176470816135406, 0.21176470816135406)
+
+TextLabel1.Parent = Frame
+TextLabel1.TextStrokeTransparency = 0.7799999713897705
+TextLabel1.Position = UDim2.new(0, 0, 0, -24)
+TextLabel1.BackgroundColor3 = Color3.fromRGB(70,0,0)
+TextLabel1.Size = UDim2.new(0, 213, 0, 23)
+TextLabel1.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel1.TextSize = 15
+TextLabel1.Text = "Blood (Hacker)"
+TextLabel1.TextColor3 = Color3.new(1, 1, 1)
+TextLabel1.Font = Enum.Font.SourceSansBold
+TextLabel1.BackgroundTransparency = 0
+
+TextLabel.Parent = Frame
+TextLabel.TextStrokeTransparency = 0.7799999713897705
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.Size = UDim2.new(0, 212, 0, 23)
+TextLabel.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel.TextSize = 15
+TextLabel.Text = "Select Filer (Left Control + Click)"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.BackgroundTransparency = 1
+
+Boxed.Parent = SelectGui
+Boxed.TextStrokeTransparency = 0
+Boxed.BorderSizePixel = 0
+Boxed.BackgroundColor3 = Color3.new(0.06666667014360428, 0.5176470875740051, 0)
+Boxed.Size = UDim2.new(0, 177, 0, 28)
+Boxed.TextSize = 35
+Boxed.TextColor3 = Color3.new(1, 1, 1)
+Boxed.Text = "Boxed"
+Boxed.Font = Enum.Font.GrenzeGotisch
+Boxed.Position = UDim2.new(0, 18, 0, 68)
+Boxed.Name = "Boxed"
+
+UICorner_9.Parent = Boxed
+
+Wood.Parent = SelectGui
+Wood.TextStrokeTransparency = 0
+Wood.BorderSizePixel = 0
+Wood.BackgroundColor3 = Color3.new(0.06666667014360428, 0.5176470875740051, 0)
+Wood.Size = UDim2.new(0, 177, 0, 28)
+Wood.TextSize = 35
+Wood.TextColor3 = Color3.new(1, 1, 1)
+Wood.Text = "Wood"
+Wood.Font = Enum.Font.GrenzeGotisch
+Wood.Position = UDim2.new(0, 18, 0, 103)
+Wood.Name = "Wood"
+
+UICorner_10.Parent = Wood
+
+Type.Parent = SelectGui
+Type.TextStrokeTransparency = 0
+Type.BorderSizePixel = 0
+Type.BackgroundColor3 = Color3.new(0.24313727021217346, 0.24313727021217346, 0.24313727021217346)
+Type.Size = UDim2.new(0, 177, 0, 28)
+Type.TextSize = 35
+Type.TextColor3 = Color3.new(1, 1, 1)
+Type.Text = "Type"
+Type.Font = Enum.Font.GrenzeGotisch
+Type.Position = UDim2.new(0, 18, 0, 33)
+Type.Name = "Type"
+
+UICorner_11.Parent = Type
+
+Frame_1.Parent = SelectGui
+Frame_1.Size = UDim2.new(1, 0, 0, 23)
+Frame_1.Position = UDim2.new(0, 0, 0, 145)
+Frame_1.BorderSizePixel = 0
+Frame_1.BackgroundColor3 = Color3.new(0.21176472306251526, 0.21176472306251526, 0.21176472306251526)
+
+TextLabel_1.Parent = Frame_1
+TextLabel_1.TextStrokeTransparency = 0.7799999713897705
+TextLabel_1.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_1.Size = UDim2.new(0, 212, 0, 23)
+TextLabel_1.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel_1.TextSize = 15
+TextLabel_1.Text = "Actions"
+TextLabel_1.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_1.Font = Enum.Font.SourceSansBold
+TextLabel_1.BackgroundTransparency = 1
+
+Delete.Parent = SelectGui
+Delete.TextStrokeTransparency = 0
+Delete.BorderSizePixel = 0
+Delete.BackgroundColor3 = Color3.new(0.24313727021217346, 0.24313727021217346, 0.24313727021217346)
+Delete.Size = UDim2.new(0, 177, 0, 28)
+Delete.TextSize = 35
+Delete.TextColor3 = Color3.new(1, 1, 1)
+Delete.Text = "Delete"
+Delete.Font = Enum.Font.GrenzeGotisch
+Delete.Position = UDim2.new(0, 17, 0, 185)
+Delete.Name = "Delete"
+
+UICorner_12.Parent = Delete
+
+Frame_2.Parent = SelectGui
+Frame_2.Size = UDim2.new(1, 0, 0, 23)
+Frame_2.Position = UDim2.new(0, 0, 1, -205)
+Frame_2.BorderSizePixel = 0
+Frame_2.BackgroundColor3 = Color3.new(0.21176472306251526, 0.21176472306251526, 0.21176472306251526)
+
+TextLabel_2.Parent = Frame_2
+TextLabel_2.TextStrokeTransparency = 0.7799999713897705
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.Size = UDim2.new(0, 212, 0, 23)
+TextLabel_2.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextSize = 15
+TextLabel_2.Text = "Quick Selection"
+TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.BackgroundTransparency = 1
+
+ScrollingFrame.Parent = SelectGui
+ScrollingFrame.Active = true
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+ScrollingFrame.BackgroundColor3 = Color3.new(0.2666666805744171, 0.2666666805744171, 0.2666666805744171)
+ScrollingFrame.Size = UDim2.new(0, 188, 0, 75)
+ScrollingFrame.ScrollBarImageColor3 = Color3.new(0, 0, 0)
+ScrollingFrame.ScrollBarThickness = 7
+ScrollingFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
+ScrollingFrame.Position = UDim2.new(0, 12, 1, -85)
+
+Player.TextStrokeTransparency = 0
+Player.BorderSizePixel = 0
+Player.BackgroundColor3 = Color3.new(0.19215688109397888, 0.19215688109397888, 0.19215688109397888)
+Player.Size = UDim2.new(1, 0, 0, 25)
+Player.TextSize = 16
+Player.TextColor3 = Color3.new(1, 1, 1)
+Player.Text = "Player"
+Player.Font = Enum.Font.DenkOne
+Player.Name = "Player"
+
+UIListLayout_1.Parent = ScrollingFrame
+UIListLayout_1.SortOrder = Enum.SortOrder.LayoutOrder
+
+Move.Parent = SelectGui
+Move.TextStrokeTransparency = 0
+Move.BorderSizePixel = 0
+Move.BackgroundColor3 = Color3.new(0.24313727021217346, 0.24313727021217346, 0.24313727021217346)
+Move.Size = UDim2.new(0, 177, 0, 28)
+Move.TextSize = 35
+Move.TextColor3 = Color3.new(1, 1, 1)
+Move.Text = "Move"
+Move.Font = Enum.Font.GrenzeGotisch
+Move.Position = UDim2.new(0, 18, 0, 223)
+Move.Name = "Move"
+
+UICorner_14.Parent = Move
+
+StackC.Parent = ScreenGui
+StackC.Size = UDim2.new(0, 529, 0, 43)
+StackC.Visible = false
+StackC.Position = UDim2.new(1, -529, 1, -43)
+StackC.Name = "StackC"
+StackC.BorderSizePixel = 0
+StackC.BackgroundColor3 = Color3.new(0, 0, 0)
+
+UIListLayout_2.Parent = StackC
+UIListLayout_2.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+
+UICorner_15.Parent = StackC
+
+Cancel_2.Parent = StackC
+Cancel_2.BackgroundColor3 = Color3.new(0.16470588743686676, 0.4784314036369324, 0.6196078658103943)
+Cancel_2.Size = UDim2.new(0, 90, 0, 32)
+Cancel_2.TextSize = 22
+Cancel_2.TextColor3 = Color3.new(1, 1, 1)
+Cancel_2.Text = "Cancel"
+Cancel_2.Font = Enum.Font.SourceSansBold
+Cancel_2.Position = UDim2.new(0.7587718367576599, 0, 0.09999971836805344, 0)
+Cancel_2.Name = "Cancel_2"
+
+UICorner_16.Parent = Cancel_2
+
+UpX.Parent = StackC
+UpX.ScaleType = Enum.ScaleType.Fit
+UpX.BackgroundColor3 = Color3.new(0.21176470816135406, 0.21176470816135406, 0.21176470816135406)
+UpX.Image = "rbxassetid://9406977951"
+UpX.Size = UDim2.new(0, 52, 0, 34)
+UpX.BackgroundTransparency = 1
+UpX.Position = UDim2.new(0.7009289860725403, 0, 0.09999971836805344, 0)
+UpX.Name = "UpX"
+
+XSize.Parent = StackC
+XSize.BackgroundColor3 = Color3.new(0, 0, 0)
+XSize.Size = UDim2.new(0, 55, 0, 31)
+XSize.TextSize = 30
+XSize.BorderColor3 = Color3.new(0.09803921729326248, 1, 0)
+XSize.Text = "2"
+XSize.TextColor3 = Color3.new(0.09803921729326248, 1, 0)
+XSize.Font = Enum.Font.Cartoon
+XSize.Position = UDim2.new(0.8147887587547302, 0, 0.3604651093482971, 0)
+XSize.Name = "XSize"
+
+DownX.Parent = StackC
+DownX.ScaleType = Enum.ScaleType.Fit
+DownX.BackgroundColor3 = Color3.new(0.21176470816135406, 0.21176470816135406, 0.21176470816135406)
+DownX.Image = "rbxassetid://9406979021"
+DownX.Size = UDim2.new(0, 52, 0, 34)
+DownX.BackgroundTransparency = 1
+DownX.Position = UDim2.new(1.237872838973999, 0, -7.504651069641113, 0)
+DownX.Name = "DownX"
+
+Space_1.Parent = StackC
+Space_1.Size = UDim2.new(0, 14, 0, 21)
+Space_1.BackgroundTransparency = 1
+Space_1.Position = UDim2.new(0.16647042334079742, 0, 0.25581395626068115, 0)
+Space_1.Name = "Space"
+Space_1.BackgroundColor3 = Color3.new(1, 1, 1)
+
+UpZ.Parent = StackC
+UpZ.ScaleType = Enum.ScaleType.Fit
+UpZ.BackgroundColor3 = Color3.new(0.21176470816135406, 0.21176470816135406, 0.21176470816135406)
+UpZ.Image = "rbxassetid://9406977951"
+UpZ.Size = UDim2.new(0, 52, 0, 34)
+UpZ.BackgroundTransparency = 1
+UpZ.Position = UDim2.new(0.7009289860725403, 0, 0.09999971836805344, 0)
+UpZ.Name = "UpZ"
+
+ZSize.Parent = StackC
+ZSize.BackgroundColor3 = Color3.new(0, 0, 0)
+ZSize.Size = UDim2.new(0, 55, 0, 31)
+ZSize.TextSize = 30
+ZSize.BorderColor3 = Color3.new(0.09803921729326248, 1, 0)
+ZSize.Text = "2"
+ZSize.TextColor3 = Color3.new(0.09803921729326248, 1, 0)
+ZSize.Font = Enum.Font.Cartoon
+ZSize.Position = UDim2.new(0.8147887587547302, 0, 0.3604651093482971, 0)
+ZSize.Name = "ZSize"
+
+DownZ.Parent = StackC
+DownZ.ScaleType = Enum.ScaleType.Fit
+DownZ.BackgroundColor3 = Color3.new(0.21176470816135406, 0.21176470816135406, 0.21176470816135406)
+DownZ.Image = "rbxassetid://9406979021"
+DownZ.Size = UDim2.new(0, 52, 0, 34)
+DownZ.BackgroundTransparency = 1
+DownZ.Position = UDim2.new(1.237872838973999, 0, -7.504651069641113, 0)
+DownZ.Name = "DownZ"
+
+Confirm_2.Parent = StackC
+Confirm_2.BackgroundColor3 = Color3.new(0.16470588743686676, 0.4784314036369324, 0.6196078658103943)
+Confirm_2.Size = UDim2.new(0, 90, 0, 32)
+Confirm_2.TextSize = 22
+Confirm_2.TextColor3 = Color3.new(1, 1, 1)
+Confirm_2.Text = "Confirm"
+Confirm_2.Font = Enum.Font.SourceSansBold
+Confirm_2.Position = UDim2.new(0.7587718367576599, 0, 0.09999971836805344, 0)
+Confirm_2.Name = "Confirm_2"
+
+UICorner_17.Parent = Confirm_2
+
+local X_Size = tonumber(XSize.Text)
+UpX.MouseButton1Down:Connect(function()
+	X_Size = X_Size + 1
+	XSize.Text = tostring(X_Size)
+end)
+DownX.MouseButton1Down:Connect(function()
+	if tonumber(XSize.Text) >= 2 then X_Size = X_Size - 1 
+		XSize.Text = tostring(X_Size)
+	end
+end)
+
+local Z_Size = tonumber(ZSize.Text)
+UpZ.MouseButton1Down:Connect(function()
+	Z_Size = Z_Size + 1
+	ZSize.Text = tostring(Z_Size)
+end)
+DownZ.MouseButton1Down:Connect(function()
+	if tonumber(ZSize.Text) >= 2 then Z_Size = Z_Size - 1 
+		ZSize.Text = tostring(Z_Size)
+	end
+end)
+
+local Number = tonumber(Amm.Text)
+UpAmm.MouseButton1Down:Connect(function()
+	if Number >= 1 then Number = Number + 1
+		Amm.Text = tostring(Number)
+	else
+		if tostring(Number):sub(1,2) == "0." then Number += .1
+			Amm.Text = tostring(Number):sub(1, 3)
+		end
+	end
+end)
+
+DownAmm.MouseButton1Down:Connect(function()
+	if Number  > 1 then Number = Number - 1
+		Amm.Text = tostring(Number)
+	elseif Number >= .2 then Number -= .1
+		if tostring(Number):sub(1,2) == "0." then
+			Amm.Text = tostring(Number):sub(1, 3)
+		end
+	end
+end)
+
+local Names = { Type, Boxed, Wood }
+
+for i, v in pairs(Names) do
+	v.MouseButton1Down:Connect(function() 
+		if v.BackgroundColor3 == Color3.new(0.06666667014360428, 0.5176470875740051, 0) then
+			v.BackgroundColor3 = Color3.new(0.24313727021217346, 0.24313727021217346, 0.24313727021217346)
+		else
+			v.BackgroundColor3 = Color3.new(0.06666667014360428, 0.5176470875740051, 0)
+		end
+	end)
+end
+
+local SuperT = {}
+local Conn = {}
+
+local User = {}
+for i, Plr in pairs(game:GetService("Players"):GetPlayers()) do
+	local PlrButton = Player:Clone()
+	PlrButton.Text = Plr.Name
+	User[Plr.UserId] = PlrButton
+	PlrButton.MouseButton1Down:Connect(function() 
+		Players.Text = Plr.Name
+	end)
+	PlrButton.Parent = ScrollingFrame
+	
+	SuperT[Plr.Name] = {}
+	SuperT[Plr.Name]["FilledBPs"] = {}
+end
+
+Conn[#Conn+1] = game:GetService("Players").PlayerAdded:Connect(function(Plr)
+	local PlrButton = Player:Clone()
+	PlrButton.Text = Plr.Name
+	User[Plr.UserId] = PlrButton
+	PlrButton.MouseButton1Down:Connect(function() 
+		Players.Text = Plr.Name
+	end)
+	PlrButton.Parent = ScrollingFrame
+	
+	SuperT[Plr.Name] = {}
+	SuperT[Plr.Name]["FilledBPs"] = {}
+end)
+
+Conn[#Conn+1] = game:GetService("Players").PlayerRemoving:Connect(function(Plr)
+	User[Plr.UserId]:Destroy()
+	if Players.Text == Plr.Name then
+		Players.Text = game:GetService("Players").LocalPlayer.Name
+	end
+	SuperT[Plr.Name] = {}
+end)
+
+for i, v in pairs(game:GetService("Workspace").PlayerSaveItems:GetChildren()) do
+	if v:FindFirstChild("Owner") and v.Owner.Value then
+		local Table = SuperT[v.Owner.Value.Name]
+		
+		if not SuperT[v.Owner.Value.Name] then
+		    SuperT[v.Owner.Value.Name] = {}
+		    Table = SuperT[v.Owner.Value.Name]
+		end
+
+		local Name = v:FindFirstChild("ItemName") or v:FindFirstChild("ItemName") or v:FindFirstChild("ToolName") or v:FindFirstChild("TreeClass") or nil
+		
+		if Name and not Table[Name.Value] then
+			Table[Name.Value] = {}
+		end
+		
+		if Name then
+			Table[Name.Value][#Table[Name.Value] + 1] = v
+		end
+		
+		if v:FindFirstChild("Type") and v.Type.Value == "Blueprint" then
+			if not Table["Blueprints"] then Table["Blueprints"] = {} end
+            Table["Blueprints"][#Table["Blueprints"] + 1] = v
+		end
+		
+		if v:FindFirstChild("BlueprintWoodClass") then
+			local BPS = Table["FilledBPs"]
+			local Wood = v.BlueprintWoodClass.Value
+			if not BPS[Wood] then
+				BPS[Wood] = {}
+			end
+			
+			if not Table[Name.Value] then
+				Table[Name.Value] = {}
+			end
+			
+			BPS[Wood][#BPS[Wood] + 1] = v
+		end
+	end
+end
+
+
+local ScreenGui_2 = Instance.new("ScreenGui")
+--local selectionFrame = Instance.new("Frame")
+
+ScreenGui_2.Parent = game:GetService("CoreGui")
+
+--selectionFrame.Parent = ScreenGui_2
+--selectionFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+--selectionFrame.BackgroundTransparency = 0.6
+--selectionFrame.Name = "selectionFrame"
+--selectionFrame.BorderColor3 = Color3.new(0, 0, 0)
+--selectionFrame.BackgroundColor3 = Color3.new(.1, .1, .1)
+
+local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+local GuiService = game:GetService('GuiService')
+
+
+local Inset = GuiService:GetGuiInset()
+local Camera = workspace.CurrentCamera
+local SelectionTable = game:GetService("Workspace").PlayerSaveItems:GetChildren()
+local searchTable = SelectionTable
+local mouseDown = false
+local lastPos
+
+
+
+--local function To3dSpace(pos)
+--	return Camera:ScreenPointToRay(pos.x, pos.y).Origin 
+--end
+
+
+local function CalcSlope(vec)
+	local rel = Camera.CFrame:pointToObjectSpace(vec)
+	return Vector2.new(rel.x/-rel.z, rel.y/-rel.z)
+end
+
+
+local function Overlaps(cf, a1, a2)
+	local rel = Camera.CFrame:ToObjectSpace(cf)
+	local x, y = rel.x / -rel.z, rel.y / -rel.z
+
+	return (a1.x) < x and x < (a2.x) 
+		and (a1.y < y and y < a2.y) and rel.z < 0 
+end
+
+
+local function Swap(a1, a2)
+	return Vector2.new(math.min(a1.x, a2.x), math.min(a1.y, a2.y)), 
+		Vector2.new(math.max(a1.x, a2.x), math.max(a1.y, a2.y))
+end
+
+
+local function Search(objs, p1, p2)
+	local Found = {}
+	local a1 = CalcSlope(p1)
+	local a2 = CalcSlope(p2)
+	
+	a1, a2 = Swap(a1, a2)
+	
+	for _ ,obj in ipairs(objs) do
+		
+		local cf = obj:IsA("Model") --// for models use GetBoundingBox() 
+			and obj:GetBoundingBox() or obj.CFrame
+		
+		if Overlaps(cf,a1, a2) then
+			table.insert(Found, obj)
+		end
+	end
+
+	return Found
+end
+
+	
+local IsTool = false
+local IsMoving, IsStacking = false, false
+Conn[#Conn+1] = UserInputService.InputBegan:Connect(function(input) 
+	if input.UserInputType == Enum.UserInputType.MouseButton1 and IsTool and not IsStacking and not IsMoving then
+		lastPos = Vector2.new(input.Position.x, input.Position.y) 
+		mouseDown = true
+	end
+end)
+
+--Conn[#Conn+1] = RunService.Heartbeat:Connect(function() --// render selectionFrame gui
+--	if mouseDown and IsTool then
+--		local pos = UserInputService:GetMouseLocation()
+
+--		local lastPos = lastPos + Inset
+--		local Center = ((lastPos+ pos) * .5) - Inset --// if no inset remove ' - Inset'
+
+--		local DistX = math.abs(lastPos.X - pos.X)  
+--		local DistY = math.abs(lastPos.Y - pos.Y)  
+	
+--		selectionFrame.Position = UDim2.new(0, Center.X,0, Center.Y)
+--		selectionFrame.Size =  UDim2.new(0, DistX,0, DistY)
+		
+--		selectionFrame.Visible = true --// if not visible
+--	end
+--end)
+
+Conn[#Conn+1] = game:GetService("Workspace").PlayerSaveItems.ChildAdded:Connect(function(v)
+	if v:WaitForChild("Owner") and v.Owner.Value then
+		local Table = SuperT[v.Owner.Value.Name]
+		table.insert(SelectionTable, v)
+		if not SuperT[v.Owner.Value.Name] then
+		    SuperT[v.Owner.Value.Name] = {}
+		    Table = SuperT[v.Owner.Value.Name]
+		end
+		
+		local Name = v:WaitForChild("ItemName", .5) or v:WaitForChild("ItemName", .5) or v:WaitForChild("TreeClass", .5) or nil
+		
+		if Name and not Table[Name.Value] then
+			Table[Name.Value] = {}
+		end
+		
+		if Name then
+	        Table[Name.Value][#Table[Name.Value] + 1] = v
+		end
+        
+		if v:FindFirstChild("Type") and v.Type.Value == "Blueprint" then
+			if not Table["Blueprints"] then Table["Blueprints"] = {} end
+            Table["Blueprints"][#Table["Blueprints"] + 1] = v
+		end
+		
+		if v:FindFirstChild("BlueprintWoodClass") then
+			local BPS = Table["FilledBPs"]
+			local Wood = v.BlueprintWoodClass.Value
+			if not BPS[Wood] then
+				BPS[Wood] = {}
+			end
+
+			BPS[Wood][#BPS[Wood] + 1] = v
+		end
+	end
+end)
+
+
+
+local Sel = Instance.new("SelectionBox")
+Sel.LineThickness = .03
+Sel.SurfaceColor3 = Color3.new(0, 0, 0)
+Sel.SurfaceTransparency = .8
+
+local Ind = Instance.new("NumberValue")
+Ind.Name = "Index"
+
+local UserInputService = game:GetService("UserInputService")
+
+local Sel_Tab = {}
+local Sel_Index = 0
+--Conn[#Conn+1] = UserInputService.InputEnded:Connect(function(input)
+--	if input.UserInputType == Enum.UserInputType.MouseButton1 and IsTool and not IsStacking and not IsMoving then
+		
+--		local pos = Vector2.new(input.Position.x, input.Position.y)
+--	local result = Search(searchTable, To3dSpace(lastPos), To3dSpace(pos))
+--		mouseDown = false; selectionFrame.Visible = false 
+--		for i, v in pairs(result) do
+--			if not v:FindFirstChildWhichIsA("SelectionBox") then
+--				Sel_Index = Sel_Index + 1
+--				Sel_Tab[Sel_Index] = Sel:Clone()
+--				
+--				local Copy = Sel_Tab[Sel_Index]
+--				local Index = Ind:Clone() 
+--				if Index then 
+--					Index.Parent = Copy Index.Value = Sel_Index
+--				end
+--				Copy.Parent = v
+--				Copy.Adornee = v
+--			else
+--				Sel_Tab[v:FindFirstChildWhichIsA("SelectionBox").Index.Value] = nil
+--				v:FindFirstChildWhichIsA("SelectionBox"):Destroy()
+--			end
+--		end
+--	end
+--end)
+
+SelectBP.MouseButton1Down:Connect(function()
+	for i, v in pairs(SuperT[Players.Text]["Blueprints"]) do
+		if not v:FindFirstChildWhichIsA("SelectionBox") then
+			Sel_Index = Sel_Index + 1
+			Sel_Tab[Sel_Index] = Sel:Clone()	
+			local Copy = Sel_Tab[Sel_Index]
+			local Index = Ind:Clone() Index.Parent = Copy Index.Value = Sel_Index
+			Copy.Parent = v
+			Copy.Adornee = v
+		end
+	end
+end)
+
+SelectAll.MouseButton1Down:Connect(function()
+	for i, Table in pairs(SuperT[Players.Text]) do
+		if typeof(Table) == "table" and Table[1] then
+			for c, v in pairs(Table) do
+				if not v:FindFirstChildWhichIsA("SelectionBox") then
+					Sel_Index = Sel_Index + 1
+					Sel_Tab[Sel_Index] = Sel:Clone()
+					
+					local Copy = Sel_Tab[Sel_Index]
+					local Index = Ind:Clone() Index.Parent = Copy Index.Value = Sel_Index
+					Copy.Parent = v
+					Copy.Adornee = v
+				end
+			end	
+		end
+	end
+end)
+
+local function Unselect()
+	for i, v in pairs(Sel_Tab) do
+		v:Destroy()
+	end
+	Sel_Tab = {}
+	Sel_Index = 0
+end
+
+UnselectAll.MouseButton1Down:Connect(Unselect)
+
+Delete.MouseButton1Down:Connect(function() 
+	local CanDelete = false
+	for i, v in pairs(Sel_Tab) do
+		if v:FindFirstAncestorWhichIsA("DataModel") and v.Adornee and v.Adornee:FindFirstChild("Owner") and v.Adornee.Owner.Value == game:GetService("Players").LocalPlayer then
+			CanDelete = true  break
+		end
+	end
+	if CanDelete then
+		DeleteGui.Visible = true
+	end
+end)
+
+No.MouseButton1Down:Connect(function()
+    DeleteGui.Visible = false
+end)
+
+Yes.MouseButton1Down:Connect(function() 
+    DeleteGui.Visible = false
+	for i, v in pairs(Sel_Tab) do
+		if v.Adornee and v.Adornee:FindFirstChild("Owner") and v.Adornee.Owner.Value == game:GetService("Players").LocalPlayer then
+			game:GetService("ReplicatedStorage").RemoteEvents.RemoveStructure:FireServer(v.Adornee)
+		end
+	end
+end)
+
+local IsOn = Color3.new(0.06666667014360428, 0.5176470875740051, 0)
+local function Select(v)
+	if not v:FindFirstAncestor("PlayerSaveItems") then return end
+	
+	local IsType = Type.BackgroundColor3 == IsOn
+	local IsWood = Wood.BackgroundColor3 == IsOn
+	local IsBoxed = Boxed.BackgroundColor3 == IsOn
+	
+	local Item = (v:IsA("Model") and v) or v:FindFirstAncestorWhichIsA("Model")
+
+	if Item and (Item.Parent.Name ~= "PlayerSaveItems") then
+		repeat 
+			Item = Item:FindFirstAncestorWhichIsA("Model")
+		until Item and (Item.Parent.Name == "PlayerSaveItems")
+	end
+	
+	if not Item:FindFirstChild("Owner") then return end
+	
+	local Category = SuperT[Item.Owner.Value.Name]
+	local SelectedName = Item:FindFirstChild("ItemName") or Item:FindFirstChild("ItemName") or Item:FindFirstChild("ToolName") or Item:FindFirstChild("TreeClass") or nil
+	if Item:FindFirstChildWhichIsA("SelectionBox") and not UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) then
+		Sel_Tab[Item:FindFirstChildWhichIsA("SelectionBox").Index.Value] = nil
+		Item.SelectionBox:Destroy()
+	elseif not UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) then
+		Sel_Index = Sel_Index + 1
+		Sel_Tab[Sel_Index] = Sel:Clone()
+
+		local Copy = Sel_Tab[Sel_Index]
+		local Index = Ind:Clone() Index.Parent = Copy Index.Value = Sel_Index
+		Copy.Parent = Item
+		Copy.Adornee = Item
+	elseif not Item:FindFirstChild("BlueprintWoodClass") then
+		for LI, LItem in pairs(Category[SelectedName.Value]) do
+			if IsBoxed and (LItem:FindFirstChild(SelectedName.Name) or (LItem:FindFirstChild("TreeClass") and v.TreeClass.Value == Item.TreeClass.Value)) or not IsBoxed then
+				if not LItem:FindFirstChildWhichIsA("SelectionBox") then
+					Sel_Index = Sel_Index + 1
+					Sel_Tab[Sel_Index] = Sel:Clone()
+
+					local Copy = Sel_Tab[Sel_Index]
+					local Index = Ind:Clone() Index.Parent = Copy Index.Value = Sel_Index
+					Copy.Parent = LItem
+					Copy.Adornee = LItem
+				else
+					Sel_Tab[LItem:FindFirstChildWhichIsA("SelectionBox").Index.Value] = nil
+					LItem:FindFirstChildWhichIsA("SelectionBox"):Destroy()
+				end
+			end
+		end
+	elseif Item:FindFirstChild("BlueprintWoodClass") and IsWood then
+		for LI, LItem in pairs(Category["FilledBPs"][Item.BlueprintWoodClass.Value]) do
+			if not IsType or LItem.ItemName.Value == SelectedName.Value then
+				if not LItem:FindFirstChildWhichIsA("SelectionBox") then
+					Sel_Index = Sel_Index + 1
+					Sel_Tab[Sel_Index] = Sel:Clone()
+
+					local Copy = Sel_Tab[Sel_Index]
+					local Index = Ind:Clone() Index.Parent = Copy Index.Value = Sel_Index
+					Copy.Parent = LItem
+					Copy.Adornee = LItem
+				else
+					Sel_Tab[LItem:FindFirstChildWhichIsA("SelectionBox").Index.Value] = nil
+					LItem:FindFirstChildWhichIsA("SelectionBox"):Destroy()
+				end
+			end
+		end
+	elseif Item:FindFirstChild("BlueprintWoodClass") and not IsType then
+		for LI, LItem in pairs(Category[SelectedName.Value]) do
+			if LItem.BlueprintWoodClass.Value == Item.BlueprintWoodClass.Value then
+				if not LItem:FindFirstChildWhichIsA("SelectionBox") then
+					Sel_Index = Sel_Index + 1
+					Sel_Tab[Sel_Index] = Sel:Clone()
+
+					local Copy = Sel_Tab[Sel_Index]
+					local Index = Ind:Clone() Index.Parent = Copy Index.Value = Sel_Index
+					Copy.Parent = LItem
+					Copy.Adornee = LItem
+				else
+					Sel_Tab[LItem:FindFirstChildWhichIsA("SelectionBox").Index.Value] = nil
+					LItem:FindFirstChildWhichIsA("SelectionBox"):Destroy()
+				end
+			end
+		end
+	elseif Item:FindFirstChild("BlueprintWoodClass") and IsType then
+		for LI, LItem in pairs(Category[SelectedName.Value]) do
+			if LItem:FindFirstChild("BlueprintWoodClass") then
+			    
+				if not LItem:FindFirstChildWhichIsA("SelectionBox") then
+					Sel_Index = Sel_Index + 1
+					Sel_Tab[Sel_Index] = Sel:Clone()
+
+					local Copy = Sel_Tab[Sel_Index]
+					local Index = Ind:Clone() Index.Parent = Copy Index.Value = Sel_Index
+					Copy.Parent = LItem
+					Copy.Adornee = LItem
+				else
+					Sel_Tab[LItem:FindFirstChildWhichIsA("SelectionBox").Index.Value] = nil
+					LItem:FindFirstChildWhichIsA("SelectionBox"):Destroy()
+				end
+			end
+		end
+	end
+end
+
+local Tool = Instance.new("Tool")
+Tool.Name = "Selection Tool"
+Tool.RequiresHandle = false
+Tool.CanBeDropped = true
+Tool.Parent = game.Players.LocalPlayer.Backpack
+Tool.Equipped:Connect(function(mouse)
+    SelectGui.Visible = true
+	IsTool = true
+	mouse.Button1Down:connect(function()
+		if mouse.Target and mouse.Target.Parent then
+			Select(mouse.Target)
+		end
+	end)
+end)
+
+Tool.Unequipped:Connect(function(mouse)
+	IsTool = false
+	SelectGui.Visible = false
+end)
+
+Tool:GetPropertyChangedSignal("Parent"):Connect(function()
+	if Tool.Parent == game:GetService("Workspace") then wait()
+	    ScreenGui:Destroy()
+	    ScreenGui_2:Destroy()
+		Tool:Destroy()
+		for i, v in pairs(Sel_Tab) do
+			v:Destroy()
+		end
+		for i, v in pairs(Conn) do
+			v:Disconnect()
+		end
+		SuperT = nil
+	end
+end)
+
+local function GetClone(v)
+    local Clone = v:Clone()
+    for i, v in pairs(Clone:GetDescendants()) do
+        if v:IsA("BasePart") or v:IsA("Part") then
+            v.CanCollide = false
+            v.Anchored = true
+        end
+    end
+    
+    local SelBox = Sel:Clone()
+    SelBox.Adornee = Clone
+    SelBox.Parent = Clone
+    
+    local Main = v:FindFirstChild("Main", true) or v:FindFirstChildWhichIsA("BasePart")
+    
+    if Main then 
+        return Clone
+    end
+end
+
+local Plr = game:GetService("Players").LocalPlayer
+
+local PS = game:GetService("ReplicatedStorage").RemoteEvents
+local CPS = PS.PPS
+local CPB = PS.PlacingBuildables
+
+local function Place(v, CFrame)
+	local Name = (v:FindFirstChild("ItemName") and v.ItemName.Value) or (v:FindFirstChild("ItemName") and v.ItemName.Value)
+	
+	task.spawn(function()
+		if v:FindFirstChild("Owner") and v.Owner.Value == Plr and v:FindFirstChild("Type") and Name then
+			if v.Type.Value ~= "Blueprint" then
+				CPS.FireServer(CPS, ((v:FindFirstChild("BlueprintWoodClass") or not v:FindFirstChild("ItemName")) and Name) or nil, CFrame, Plr, (v:FindFirstChild("BlueprintWoodClass") and v.BlueprintWoodClass.Value) or nil, v, true)
+			else
+				CPB.FireServer(CPB, v.ItemName.Value, CFrame, Plr, v, true) 
+			end
+		end
+	end)
+end
+
+
+
+local function GetPart(v)
+    if v:FindFirstChild("BlueprintWoodClass") and v:FindFirstChild("MainCFrame") then
+        local Part = Instance.new("Part")
+        Part.Name = "Main"
+        Part.Size = Vector3.new(.01, .01, .01)
+        Part.Anchored = true
+        Part.Transparency = 1
+        Part.CFrame = v.MainCFrame.Value
+        Part.Parent = v
+        v.PrimaryPart = Part
+    end
+end
+
+local Copied = {}
+local function GetCopy(v)
+    local Name = v:FindFirstChild("ItemName") or v:FindFirstChild("ItemName") or nil
+    
+    local Choosed
+    if Name and Copied[Name.Value] then
+        Choosed = Copied[Name.Value]:Clone()
+    elseif Name and not Copied[Name.Value] then
+        local Main = v:Clone()
+        for i, v in pairs(Main:GetDescendants()) do
+            if v:IsA("BasePart") then
+                v.Anchored = true
+                v.CanCollide = false
+                if v.Transparency ~= 1 then v.Transparency = .3 end
+            end
+        end
+        Copied[Name.Value] = Main
+        Choosed = Main:Clone()
+    end
+    if Choosed then
+        return { ["Main"] = Choosed, ["Name"] = Name.Name  }
+    end
+end
+
+
+local Camera = game:GetService("Workspace").CurrentCamera
+
+local function IsPos(Pos)
+    local Cam = Camera.CFrame.Position
+    
+    local Closer = {}
+    local X = (Vector2.new(Cam.X) - Vector2.new(Pos.X)).magnitude
+    local Z = (Vector2.new(Cam.Z) - Vector2.new(Pos.Z)).magnitude
+    
+    Closer[X] = "X"
+    Closer[Z] = "Z"
+    
+    local Val = Closer[math.min(X, Z)]
+    
+    if Val == "X" and Cam.Z > Pos.Z then
+        return "-" .. Val
+    elseif Val == "X" and Cam.Z < Pos.Z then
+        return "+" .. Val
+    elseif Val == "Z" and Cam.X > Pos.X then
+        return "-" .. Val
+    elseif Val == "Z" and Cam.X < Pos.X then
+        return "+" .. Val 
+    end
+end
+
+Move.MouseButton1Down:Connect(function()
+	if IsMoving then return end IsMoving = true
+	local NewModel
+	local Cancelled = false
+	spawn(function() for i = 1, 100 do wait(.1) if NewModel then break end end repeat wait() until (not NewModel) or Cancelled 
+IsStacking = false end)
+	local Items = {}
+	local LastName = ""
+	local IsStack = true
+	for i, v in pairs(Sel_Tab) do
+		if v:FindFirstAncestorWhichIsA("DataModel") and not v.Adornee:FindFirstChild("TreeClass") then
+			Items[#Items+1] = { ["Name"] = v.Adornee:FindFirstChild("ItemName") or v.Adornee:FindFirstChild("ItemName") or v.Adornee:FindFirstChild("ToolName") or v.Adornee:FindFirstChild("TreeClass") or nil, ["Model"] = v.Adornee }
+
+			if IsStack and (LastName == "" or Items[#Items].Model.Owner.Value.Name == LastName) then 
+				LastName = Items[#Items].Model.Owner.Value.Name
+			elseif IsStack and (LastName ~= "" and LastName ~= Items[#Items].Model.Owner.Value.Name) then
+				LastName = Items[#Items].Model.Owner.Value.Name
+				IsStack = false
+			end
+		elseif not v:FindFirstAncestorWhichIsA("DataModel") then
+			Sel_Tab[i] = nil
+        end
+	end
+	if IsStack then
+		local LastModel = Instance.new("Model")
+        	
+		for i, v in pairs(Items) do
+			local Model = v.Model
+        		    	
+			GetPart(Model)
+			if Model:FindFirstChild("Main") then
+				NewModel = GetCopy(Model)
+				NewModel.Main:SetPrimaryPartCFrame(Model.Main.CFrame)
+				NewModel.Main.Parent = LastModel
+			end
+		end
+		local New = Instance.new("Part")
+		New.Anchored = true
+		New.CanCollide = false
+		New.Transparency = 1
+		New.Size = Vector3.new(.01, .01, .01)
+		New.CFrame = CFrame.new(LastModel:GetModelCFrame().Position)
+		New.Parent = LastModel
+		New.Name = "Main"
+		
+		LastModel.PrimaryPart = New
+		LastModel.Parent = game.Workspace
+		
+		local Box = Instance.new("SelectionBox", LastModel)
+		Box.Adornee = LastModel
+		Box.LineThickness = .05
+		Box.SurfaceColor3 = Color3.new(0, 0, 0)
+		Box.SurfaceTransparency = .7
+		
+		local Con = {}
+		
+		Con[#Con+1] = Up.MouseButton1Down:Connect(function()
+			LastModel:SetPrimaryPartCFrame(LastModel.Main.CFrame + Vector3.new(0, tonumber(Amm.Text), 0))
+		end)
+		
+		Con[#Con+1] = Down.MouseButton1Down:Connect(function()
+			LastModel:SetPrimaryPartCFrame(LastModel.Main.CFrame + Vector3.new(0, -tonumber(Amm.Text), 0))
+		end)
+		
+		local Inf = math.huge
+		Con[#Con+1] = RotateL90.MouseButton1Down:Connect(function()
+			local Angle = 90/math.clamp(tonumber(Amm.Text), 1, Inf)
+			local Tab_Left = {
+				["+X"] = CFrame.Angles(0, 0, math.rad(-Angle)),
+				["-X"] = CFrame.Angles(0, 0, math.rad(Angle)),
+				["+Z"] = CFrame.Angles(math.rad(Angle), 0, 0),
+				["-Z"] = CFrame.Angles(math.rad(-Angle), 0, 0)
+			}
+			print(IsPos(LastModel.Main.Position)) print(Tab_Left[IsPos(LastModel.Main.Position)])
+			LastModel:SetPrimaryPartCFrame(LastModel.Main.CFrame * Tab_Left[IsPos(LastModel.Main.Position)])
+		end)
+		
+		Con[#Con+1] = RotateR90.MouseButton1Down:Connect(function()
+			local Angle = 90/math.clamp(tonumber(Amm.Text), 1, Inf)
+			local Tab_Right = {
+				["+X"] = CFrame.Angles(0, 0, math.rad(Angle)),
+				["-X"] = CFrame.Angles(0, 0, math.rad(-Angle)),
+				["+Z"] = CFrame.Angles(math.rad(-Angle), 0, 0),
+				["-Z"] = CFrame.Angles(math.rad(Angle), 0, 0)
+			}
+			print(IsPos(LastModel.Main.Position)) print(Tab_Right[IsPos(LastModel.Main.Position)])
+			LastModel:SetPrimaryPartCFrame(LastModel.Main.CFrame * Tab_Right[IsPos(LastModel.Main.Position)])
+		end)
+		Con[#Con+1] = Left.MouseButton1Down:Connect(function()
+			local ToMove = tonumber(Amm.Text)
+			local Tab_Left = {
+				["+X"] = Vector3.new(ToMove, 0, 0),
+				["-X"] = Vector3.new(-ToMove, 0, 0),
+				["+Z"] = Vector3.new(0, 0, -ToMove),
+				["-Z"] = Vector3.new(0, 0, ToMove)
+			}
+			LastModel:SetPrimaryPartCFrame(LastModel.Main.CFrame + Tab_Left[IsPos(LastModel.Main.Position)])
+		end)
+		
+		Con[#Con+1] = Right.MouseButton1Down:Connect(function()
+			local ToMove = tonumber(Amm.Text)
+			local Tab_Right = {
+				["+X"] = Vector3.new(-ToMove, 0, 0),
+				["-X"] = Vector3.new(ToMove, 0, 0),
+				["+Z"] = Vector3.new(0, 0, ToMove),
+				["-Z"] = Vector3.new(0, 0, -ToMove)
+			}
+			LastModel:SetPrimaryPartCFrame(LastModel.Main.CFrame + Tab_Right[IsPos(LastModel.Main.Position)])
+		end)
+		
+		Con[#Con+1] = CAR.MouseButton1Down:Connect(function()
+			LastModel:SetPrimaryPartCFrame(LastModel.Main.CFrame * CFrame.Angles(0, math.rad(-90/math.clamp(tonumber(Amm.Text), 1, Inf)), 0))
+		end)
+		
+		Con[#Con+1] = CAL.MouseButton1Down:Connect(function()
+			LastModel:SetPrimaryPartCFrame(LastModel.Main.CFrame * CFrame.Angles(0, math.rad(90/math.clamp(tonumber(Amm.Text), 1, Inf)), 0))
+		end)
+		
+		StackGui.Visible = true
+		
+		local Confirmed = false
+		Con[#Con+1] = Confirm.MouseButton1Down:Connect(function()
+			Confirmed = true
+		end)
+		
+		Con[#Con+1] = Cancel.MouseButton1Down:Connect(function()
+			Cancelled = true
+		end)
+		
+		Con[#Con+1] = StackGui:GetPropertyChangedSignal("Parent"):Connect(function()
+			Cancelled = true
+		end)
+		
+		
+		repeat wait() until Confirmed or Cancelled
+		IsMoving = false
+		
+		if not Cancelled and Confirmed then
+			local Items = {}
+			local LastName = ""
+			local IsStack = true
+			for i, v in pairs(Sel_Tab) do
+				if v:FindFirstAncestorWhichIsA("DataModel") and not v.Adornee:FindFirstChild("TreeClass") and not v:FindFirstChild("BlueprintWoodClass") and v.Adornee then
+					local LName = v.Adornee:FindFirstChild("ItemName") or v.Adornee:FindFirstChild("ItemName") or v.Adornee:FindFirstChild("ToolName") or nil
+					if not Items[LName.Value] then 
+						Items[LName.Value] = {}
+					end
+					Items[LName.Value][#Items[LName.Value]+1] = v.Adornee 
+				elseif not v:FindFirstAncestorWhichIsA("DataModel") then
+					Sel_Tab[i] = nil
+        			end
+			end
+			local Count = #Items
+			for i, v in pairs(LastModel:GetChildren()) do
+				if v:IsA("Model") then
+					local LName = v:FindFirstChild("ItemName") or v:FindFirstChild("ItemName") or v:FindFirstChild("ToolName") or nil
+					local LItem = Items[LName.Value][#Items[LName.Value]]
+					
+					Items[LName.Value][#Items[LName.Value]] = nil
+					
+					Place(LItem, v.PrimaryPart.CFrame) Count = Count - 1
+				end
+			end
+		end
+		
+		LastModel:Destroy()
+		for i, v in pairs(Con) do
+			v:Disconnect()
+		end
+
+		StackGui.Visible = false
+		wait(.1) Unselect()
+	end
+end)
+
+ end
+end
+
+return Main12
